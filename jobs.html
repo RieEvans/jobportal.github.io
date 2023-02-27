@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+</head>
+
+
+
+<body>
+
+    <!--HEADER SECTION STARTS-->
+
+    <header class="header">
+
+        <section class="flex">
+
+            <div id="menu-btn" class="fa-solid fa-bars-staggered"></div>
+
+            <a href="home.html" class="logo"><i class="fa-solid fa-briefcase"></i>
+                JobHunt.</a>
+            
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About us</a>
+                    <a href="jobs.html">all jobs</a>
+                    <a href="contact.html">contact us</a>
+                    <a href="account.html">account</a>
+                </nav>
+
+                <a href="#" class="btn" style="margin-top: 0;">post job</a>
+
+
+        </section>
+
+    </header>
+
+
+<!--HEADER SECTION ENDS-->
+
+
+
+
+<!--JOB FILTER SECTION STARTS-->
+
+    <section class="job-filter">
+
+        <h1 class="heading">filter jobs</h1>
+
+        <form action="" method="post">
+
+
+            <div class="flex">
+                <div class="box">
+                    <p>job title <span>*</span></p>
+                    <input type="text" name="title" placeholder="keyword, category or company" required maxlength="20" class="input">
+                </div>
+
+                <div class="box">
+                    <p>Job location</p>
+                    <input type="text" name="location" placeholder="city, state or country" required maxlength="50" class="input">
+                </div>
+            </div>
+
+            <div class="dropdown-container">
+
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="date posted" name="date" maxlength="20" class="output">
+
+                    <div class="list">
+                        <p class="items">today</p>
+                        <p class="items">2 days ago</p>
+                        <p class="items">3 days ago</p>
+                        <p class="items">7 days ago</p>
+                        <p class="items">19 days ago</p>
+                        <p class="items">30 days ago</p>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="estimated salary" name="date" maxlength="20" class="output">
+
+                    <div class="list">
+                        <p class="items">15k - 20k</p>
+                        <p class="items">20k to 30k</p>
+                        <p class="items">35k to 50k</p>
+                        <p class="items">60k to 75k</p>
+                        <p class="items">30k to 40k</p>
+                        <p class="items">27k to 35k</p>
+                        <p class="items">70k to 125k</p>
+                        <p class="items">70k to 80k</p>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="job type" name="date" maxlength="20" class="output">
+
+                    <div class="list">
+                        <p class="items">full time</p>
+                        <p class="items">part-time</p>
+                        <p class="items">internship</p>
+                        <p class="items">contract</p>
+                        <p class="items">temporary</p>
+                        <p class="items">fresher</p>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="educational level" name="date" maxlength="20" class="output">
+
+                    <div class="list">
+                        <p class="items">bachelor degree</p>
+                        <p class="items">masters degree</p>
+                        <p class="items">undergraduate</p>
+                        <p class="items">senior highschool</p>
+                        <p class="items">special diploma / certification</p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="work shifts" name="date" maxlength="20" class="output">
+
+                    <div class="list">
+                        <p class="items">day shift</p>
+                        <p class="items">night shift</p>
+                        <p class="items">flexible shift</p>
+                        <p class="items">fixed shift</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </form>
+
+    </section>
+
+
+
+
+
+<!--JOB FILTER SECTION ENDS-->
+
+
+
+<!---ALL JOB SECTION STARTS -->
+
+    <!-- JOB SECTION STARTS -->
+
+    <section class="jobs-container">
+
+        <h1 class="heading">all jobs</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+
+                <div class="company">
+
+                    <img src="images/icon-1.png">
+                    <div>
+                        <h3>IT InfoSys co.</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">senior web developer</h3>
+                <p class="location"><i class="fa-solid fa-location-dot"></i><span>Montalban, Rizal Philippines</span></p>
+                <div class="tags">
+                    <p><i class="fa-solid fa-peso-sign"></i><span>70K to 125K</span></p>
+                    <p><i class="fa-solid fa-briefcase"></i><span>part time</span></p>
+                    <p><i class="fa-solid fa-clock"></i><span>day shift</span></p>
+                </div>
+
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="fa-regular fa-heart"></button>
+                </div>
+
+            </div>
+
+            
+
+            <div class="box">
+
+                <div class="company">
+
+                    <img src="images/icon-2.png">
+                    <div>
+                        <h3>all media ltd</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">qualified developer</h3>
+                <p class="location"><i class="fa-solid fa-location-dot"></i><span>UP Town diliman QC</span></p>
+                <div class="tags">
+                    <p><i class="fa-solid fa-peso-sign"></i><span>30K to 40K</span></p>
+                    <p><i class="fa-solid fa-briefcase"></i><span>full time</span></p>
+                    <p><i class="fa-solid fa-clock"></i><span>flexible shift</span></p>
+                </div>
+
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="fa-regular fa-heart"></button>
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <div class="company">
+
+                    <img src="images/icon-1.png">
+                    <div>
+                        <h3>software solutions</h3>
+                        <p>posted today</p>
+                    </div>
+                </div>
+                <h3 class="job-title">javascript developer</h3>
+                <p class="location"><i class="fa-solid fa-location-dot"></i><span>BGC Taguig</span></p>
+                <div class="tags">
+                    <p><i class="fa-solid fa-peso-sign"></i><span>70K to 80K</span></p>
+                    <p><i class="fa-solid fa-briefcase"></i><span>full time</span></p>
+                    <p><i class="fa-solid fa-clock"></i><span>night shift</span></p>
+                </div>
+
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="fa-regular fa-heart"></button>
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <div class="company">
+
+                    <img src="images/icon-4.png">
+                    <div>
+                        <h3>IT World</h3>
+                        <p>19 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">junior front-end developer</h3>
+                <p class="location"><i class="fa-solid fa-location-dot"></i><span>cubao farmers plaza qc</span></p>
+                <div class="tags">
+                    <p><i class="fa-solid fa-peso-sign"></i><span>35K to 50K</span></p>
+                    <p><i class="fa-solid fa-briefcase"></i><span>full time</span></p>
+                    <p><i class="fa-solid fa-clock"></i><span>day shift</span></p>
+                </div>
+
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="fa-regular fa-heart"></button>
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <div class="company">
+
+                    <img src="images/icon-5.jpg">
+                    <div>
+                        <h3>info statics</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">junior assistant</h3>
+                <p class="location"><i class="fa-solid fa-location-dot"></i><span>cubao farmers plaza qc</span></p>
+                <div class="tags">
+                    <p><i class="fa-solid fa-peso-sign"></i><span>20K to 30K</span></p>
+                    <p><i class="fa-solid fa-briefcase"></i><span>full time</span></p>
+                    <p><i class="fa-solid fa-clock"></i><span>day shift</span></p>
+                </div>
+
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="fa-regular fa-heart"></button>
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <div class="company">
+
+                    <img src="images/icon-6.png">
+                    <div>
+                        <h3>mass idea</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">PHP developer</h3>
+                <p class="location"><i class="fa-solid fa-location-dot"></i><span>eastwood QC</span></p>
+                <div class="tags">
+                    <p><i class="fa-solid fa-peso-sign"></i><span>50K to 60K</span></p>
+                    <p><i class="fa-solid fa-briefcase"></i><span>full time</span></p>
+                    <p><i class="fa-solid fa-clock"></i><span>night shifts</span></p>
+                </div>
+
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="fa-regular fa-heart"></button>
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <div class="company">
+
+                    <img src="images/icon-7.png">
+                    <div>
+                        <h3>tech mahindra</h3>
+                        <p>13 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">system administration </h3>
+                <p class="location"><i class="fa-solid fa-location-dot"></i><span>ortigas pasig</span></p>
+                <div class="tags">
+                    <p><i class="fa-solid fa-peso-sign"></i><span>60K to 75K</span></p>
+                    <p><i class="fa-solid fa-briefcase"></i><span>full time</span></p>
+                    <p><i class="fa-solid fa-clock"></i><span>flexible shift</span></p>
+                </div>
+
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="fa-regular fa-heart"></button>
+                </div>
+
+            </div>
+
+
+            <div class="box">
+
+                <div class="company">
+
+                    <img src="images/icon-8.png">   
+                    <div>
+                        <h3>concentrix</h3>
+                        <p> 1 week ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">it help desk</h3>
+                <p class="location"><i class="fa-solid fa-location-dot"></i><span>ortigas edsa pasig </span></p>
+                <div class="tags">
+                    <p><i class="fa-solid fa-peso-sign"></i><span>27K to 35K</span></p>
+                    <p><i class="fa-solid fa-briefcase"></i><span>full time</span></p>
+                    <p><i class="fa-solid fa-clock"></i><span>day shift</span></p>
+                </div>
+
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="fa-regular fa-heart"></button>
+                </div>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <div class="company">
+
+                    <img src="images/icon-9.png">
+                    <div>
+                        <h3>trustwave</h3>
+                        <p>3 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">network engineer</h3>
+                <p class="location"><i class="fa-solid fa-location-dot"></i><span>BGC Taguig </span></p>
+                <div class="tags">
+                    <p><i class="fa-solid fa-peso-sign"></i><span>70K to 125K</span></p>
+                    <p><i class="fa-solid fa-briefcase"></i><span>full time</span></p>
+                    <p><i class="fa-solid fa-clock"></i><span>night shift</span></p>
+                </div>
+
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="fa-regular fa-heart"></button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="jobs.html" class="btn">view all</a>
+
+        </div>
+            
+
+    </section>
+
+
+
+<!-- JOB SECTION ENDS -->
+
+
+
+
+
+
+<!--ALL JOB SECTION ENDS-->
+
+
+
+
+
+
+<!--FOOTER SECTION STARTS--> 
+
+
+    <section class="footer">
+
+        <section class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html"><i class="fa-solid fa-angle-right"></i>HOME</a>
+                <a href="about.html"><i class="fa-solid fa-angle-right"></i>about</a>
+                <a href="jobs.html"><i class="fa-solid fa-angle-right"></i>all jobs</a>
+                <a href="contact.html"><i class="fa-solid fa-angle-right"></i>contact us </a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i>filter search</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                
+                <a href="#"><i class="fa-solid fa-angle-right"></i>account</a>
+                <a href="login.html"><i class="fa-solid fa-angle-right"></i>login</a>
+                <a href="register.html"><i class="fa-solid fa-angle-right"></i>register</a>
+
+                <a href="#"><i class="fa-solid fa-angle-right"></i>post job</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i>dashboard</a>
+            </div>
+
+            <div class="box">
+
+                <h3>follow us</h3>
+                <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+                
+            </div>
+
+        </section>
+
+
+        <div class="credit">&copy; copyright @2023 by <span>mr.robot</span> | all rights reserved </div>
+
+    </section>   
+
+
+
+    <!--FOOTER SECTION ENDS-->
+
+
+<!--CUSTOME JS FILE LINK-->
+ 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    
+
+    
+</body>
+
+</html>
